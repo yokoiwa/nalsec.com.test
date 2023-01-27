@@ -1,0 +1,38 @@
+{
+  "name": "src",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ifconfig en0 | grep \"inet \" | awk '{print $2}' | xargs next dev -H",
+    "build": "next build && next export -o .dist/",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bezier-easing": "^2.1.0",
+    "hamburger-react": "^2.5.0",
+    "html-react-parser": "^3.0.4",
+    "microcms-js-sdk": "^2.3.2",
+    "next": "13.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.42.1",
+    "react-icons": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.12",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "eslint-config-prettier": "^8.5.0",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.4"
+  }
+}
