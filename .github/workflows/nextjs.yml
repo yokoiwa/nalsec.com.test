@@ -77,8 +77,8 @@ jobs:
 #        run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Build with Next.js
         env:
-          MICROCMS_SERVICE_DOMAIN: nalsec
-          MICROCMS_API_KEY_DEFAULT: u1RqRP02QkqiAnobkcAAD5ASswRNN6HlDVEc
+          MICROCMS_SERVICE_DOMAIN: ${{ vars.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY_DEFAULT: ${{ vars.MICROCMS_API_KEY_DEFAULT }}
         run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
