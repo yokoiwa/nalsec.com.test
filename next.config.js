@@ -10,9 +10,9 @@ const nextConfig = {
   // basePath: isProduction ? "" : "",
   // assetPrefix: isProduction ? "/nalsec-website" : "",
   // assetPrefix: isProduction ? "" : "",
-  experimental: {
-    // appDir: true
-  },
+  // experimental: {
+  //   appDir: true
+  // },
 };
 
 module.exports = nextConfig;
