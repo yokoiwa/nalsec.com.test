@@ -7,9 +7,9 @@ const nextConfig = {
   },
   trailingSlash: true,
   // basePath: isProduction ? "/nalsec-website" : "",
-  basePath: isProduction ? "" : "",
+  // basePath: isProduction ? "" : "",
   // assetPrefix: isProduction ? "/nalsec-website" : "",
-  assetPrefix: isProduction ? "" : "",
+  // assetPrefix: isProduction ? "" : "",
   experimental: {
     // appDir: true
   },
