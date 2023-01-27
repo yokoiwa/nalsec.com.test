@@ -76,6 +76,9 @@ jobs:
 #      - name: Static HTML export with Next.js
 #        run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Build with Next.js
+        env:
+          MICROCMS_SERVICE_DOMAIN: nalsec
+          MICROCMS_API_KEY_DEFAULT: u1RqRP02QkqiAnobkcAAD5ASswRNN6HlDVEc
         run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
