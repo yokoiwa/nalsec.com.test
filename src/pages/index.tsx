@@ -13,6 +13,7 @@ export const getStaticProps: GetStaticProps<{
   main: Main;
   services: Service[];
 }> = async () => {
+  console.log("service domain :", process.env.MICROCMS_SERVICE_DOMAIN)
   const resMain = await microcmsClient.get<Main>({
     endpoint: "main",
   });
